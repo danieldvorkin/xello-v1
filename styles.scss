@@ -6,7 +6,7 @@ body {
   height: 50px;
 }
 .badge-line {
-  margin: 0px 0px 0px -10%;
+  margin: 0px 0px 0px -20%;
   position: relative;
 }
 .badge {
@@ -91,6 +91,32 @@ body {
 }
 .list-group-item:disabled {
   border: 1px #e7e7e7 dashed;
+}
+.rdy {
+  background: #187bad;
+  border: 1px solid #187bad;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.list-group-item .column1title {
+  padding-right: 0px;
+}
+.list-group-item .column2status {
+  padding-right: 0px;
+}
+.list-group-item .details {
+  font-size: 11px;
+  height: 15px;
+}
+.list-group-item .details .code {
+  border-right: 1px solid grey;
+}
+.list-group-item .credit {
+  padding-right: 0px;
+}
+.list-group-item .credit p {
+  float: right;
 }
 @media (min-width: 576px) {
   .container {
