@@ -3,7 +3,7 @@ body {
   padding: 25px 20px;
 }
 .big-card {
-  display: block;
+  display: flex;
 }
 .small-card {
   display: none;
@@ -139,7 +139,7 @@ body {
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 767px) and (orientation: portrait) {
   .big-card {
-    display: none;
+    display: flex;
   }
   .small-card {
     display: block;
