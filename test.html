@@ -73,6 +73,42 @@
           position: relative;
           left: -5%;
         }
+        .list-group > button {
+          margin: 2px 0px;
+          border-radius:8px;
+          border-top-left-radius: 8px !important;
+          border-top-right-radius: 8px !important;
+        }
+        .selected {
+          border-left:10px solid #80C433;
+        }
+        .need-to-add {
+          border-left:35px solid #33AFDE;
+        }
+        .card-section .card-header {
+          padding:2px 10px;
+        }
+        .card-section .card-header h5 {
+          margin-bottom:0px;
+          margin-top:12px;
+        }
+        .card-section .card-header p {
+          margin-bottom:0px;
+        }
+        .card-section .card-body {
+          padding:0.4rem;
+        }
+        .next-year {
+          border:none;
+          background:none;
+        }
+        .next-year > .card-header {
+          border:none;
+          background:none;
+        }
+        .list-group-item:disabled {
+          border: 1px #e7e7e7 dashed;
+        }
         @media (min-width: 576px) {
           .container {
             max-width: 740px;
@@ -159,6 +195,88 @@
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> Remaining
             </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row card-section" style="margin-top:25px;">
+    <div class="col-lg-3">
+      <div class="card">
+        <div class="card-header">
+          <h5><strong>Year 9(next year)</strong></h5>
+          <p><small>1 Credit Planned</small></p>
+        </div>
+        <div class="card-body">
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action selected">Cras justo odio</button>
+            <button type="button" class="list-group-item list-group-item-action selected">Dapibus ac facilisis in</button>
+            <button type="button" class="list-group-item list-group-item-action need-to-add">Morbi leo risus</button>
+            <button type="button" class="list-group-item list-group-item-action need-to-add">Porta ac consectetur ac</button>
+            <button type="button" class="list-group-item list-group-item-action need-to-add">Morbi leo risus</button>
+            <button type="button" class="list-group-item list-group-item-action need-to-add">Porta ac consectetur ac</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+          </div>
+        </div>
+        <div class="card-footer" style="background:#33AFDE;text-align:center;">
+          <button type="button">Ready to Submit
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card next-year">
+        <div class="card-header">
+          <h5><strong>Year 9(next year)</strong></h5>
+          <p><small>1 Credit Planned</small></p>
+        </div>
+        <div class="card-body next-year">
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card next-year">
+        <div class="card-header">
+          <h5><strong>Year 9(next year)</strong></h5>
+          <p><small>1 Credit Planned</small></p>
+        </div>
+        <div class="card-body">
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card next-year">
+        <div class="card-header">
+          <h5><strong>Year 9(next year)</strong></h5>
+          <p><small>1 Credit Planned</small></p>
+        </div>
+        <div class="card-body">
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>Available Slot</button>
           </div>
         </div>
       </div>
