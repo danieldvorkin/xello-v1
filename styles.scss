@@ -2,6 +2,12 @@ body {
   background: #fafafa;
   padding: 25px 20px;
 }
+.big-card {
+  display: block;
+}
+.small-card {
+  display: none;
+}
 .container {
   padding: 0px 0px;
 }
@@ -129,6 +135,24 @@ body {
 @media (min-width: 576px) {
   .container {
     max-width: 740px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) and (orientation: portrait) {
+  .big-card {
+    display: none;
+  }
+  .small-card {
+    display: block;
+  }
+  .container > .card {
+    margin-top: 60px;
+  }
+  .badge-line {
+    margin: 0px 0px 0px 0%;
+    position: relative;
+  }
+  .card-section {
+    margin-top: 130px !important;
   }
 }
 @media (min-width: 768px) {
