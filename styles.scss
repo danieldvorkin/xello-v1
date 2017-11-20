@@ -132,6 +132,13 @@ body {
   .container {
     max-width: 1160px;
   }
+  .badge-line {
+    margin: 0px 0px 0px 0px;
+  }
+  .progress {
+    width: 75%;
+    margin-top: 5px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
