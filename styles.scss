@@ -74,6 +74,9 @@ body {
 .selected {
   border-left: 10px solid #80c433;
 }
+.notice {
+  border-left: 10px solid red;
+}
 .need-to-add {
   border-left: 35px solid #33afde;
 }
@@ -132,6 +135,26 @@ body {
 .list-group-item .credit p {
   float: right;
 }
+.tooltip-inner {
+  width: 270px;
+  padding: 0px 0px;
+  color: #fff;
+  text-align: center;
+  background-color: white;
+  border-radius: .25rem;
+  background: white;
+  max-width: 100%;
+}
+.tooltip.show {
+  opacity: 1;
+}
+button:focus {
+  outline: 0px dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+}
+.tooltip > .arrow {
+  left: 250px !important;
+}
 @media (min-width: 576px) {
   .container {
     max-width: 740px;
@@ -139,10 +162,10 @@ body {
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 767px) and (orientation: portrait) {
   .big-card {
-    display: flex;
+    display: none;
   }
   .small-card {
-    display: block;
+    display: flex;
   }
   .container > .card {
     margin-top: 60px;
@@ -152,7 +175,48 @@ body {
     position: relative;
   }
   .card-section {
-    margin-top: 130px !important;
+    margin-top: 10px !important;
+  }
+  .btn-group {
+    top: 0%;
+    left: 0%;
+    padding-right: 0px;
+  }
+  input[type=checkbox],
+  input[type=radio] {
+    padding: 0;
+    margin-top: 6px;
+  }
+  .checkbox-group {
+    left: 5%;
+  }
+  .selected .details .code {
+    border-right: 0px solid white !important;
+    position: relative;
+    top: -4px;
+  }
+  .selected .details .dets {
+    position: relative;
+    top: -41px;
+    left: 62px;
+  }
+  .selected .details .credit {
+    position: relative;
+    top: -75px;
+  }
+  .mobile2 .details .code {
+    top: -18px;
+  }
+  .mobile2 .details .dets {
+    top: -55px;
+  }
+  .mobile2 .details .credit {
+    position: relative;
+    top: -90px;
+  }
+  .column2status {
+    position: relative;
+    top: -20px;
   }
 }
 @media (min-width: 768px) {

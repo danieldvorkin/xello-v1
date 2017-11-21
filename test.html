@@ -86,11 +86,11 @@
   
   <div class="card small-card">
     <div class="card-header">
-      <div class="row label vdivide">
-        <div class="col-lg-2 col-md-2">
-          <p style="float:left;">Requirements</p>
-        </div>
-        <div class="col-lg-3 col-md-3">
+      <h4 style="text-align:center;">Requirements</h4>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
           <div class="btn-group">
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Show All
@@ -104,8 +104,13 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-7 col-md-7 checkbox-group">
-          Credits
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 checkbox-group">
+          Credits:
+        </div>
+        <div class="col-lg-12 col-md-12 checkbox-group">
           <div class="form-check form-check-inline">
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> All
@@ -118,12 +123,12 @@
           </div>
           <div class="form-check form-check-inline">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> Planned
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Planned
             </label>
           </div>
           <div class="form-check form-check-inline">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> Remaining
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Remaining
             </label>
           </div>
         </div>
@@ -144,10 +149,10 @@
             
             <button type="button" class="list-group-item list-group-item-action selected">
               <div class="name row">
-                <div class="col-lg-10 column1title">
+                <div class="col-lg-10 col-xs-10 column1title">
                   English
                 </div>
-                <div class="col-lg-2 column2status"></div>
+                <div class="col-lg-2 col-xs-2 column2status"></div>
               </div>
               <div class="details row">
                 <div class="code col-lg-4 col-md-3">
@@ -162,13 +167,13 @@
               </div>
             </button>
             
-            <button type="button" class="list-group-item list-group-item-action selected">
+            <button type="button" class="list-group-item list-group-item-action selected mobile2" data-toggle="tooltip" data-title="<button type='button' class='list-group-item list-group-item-action notice' data-toggle='tooltip'><div class='name row' style='text-align:left;'><div class='col-lg-12 col-md-12 details'>This course requires a Pre-Requisite</div></div><div class='name row' style='text-align:left;'><div class='col-lg-12 col-md-12 details'><a href='#'>Add one.</a></div></div></button>">
               <div class="name row">
                 <div class="col-lg-10 col-md-10 column1title">
                   Functions
                 </div>
                 <div class="col-lg-2 col-md-2 column2status">
-                  <span style="float:right" class="badge badge-pill badge-danger">!</span>
+                  <span style="float:right" class="badge item-badge badge-pill badge-danger">!</span>
                 </div>
               </div>
               <div class="details row">
@@ -220,7 +225,7 @@
                 </div>
               </div>
             </button>
-            <button type="button" class="list-group-item list-group-item-action need-to-add">
+            <button type="button" class="list-group-item list-group-item-action need-to-add" style="border-bottom-right-radius: 8px;border-bottom-left-radius: 8px;">
               <div class="name row">
                 <div class="col-lg-12 column1title">
                   Add Elective
@@ -304,5 +309,11 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script>
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip({ html: true, trigger: 'hover focus' });
+});
+</script>
 </body>
 </html>
